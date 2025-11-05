@@ -4,7 +4,7 @@ This is a responsive front-end clone of the YouTube homepage, built with HTML an
 
 ## 🚀 Live Demo
 
-👉 [View it on GitHub Pages](https://bati58.github.io/youtube.com-clone/)
+👉 [View it on browser](https://bati58.github.io/youtube.com-clone/)
 
 
 
