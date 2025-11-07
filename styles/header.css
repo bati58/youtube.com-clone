@@ -72,7 +72,8 @@
 .upload-icon-container,
 .youtube-apps-icon-container,
 .notifications-icon-container,
-.current-user-picture-container{
+.current-user-picture-container,
+.youtube-home-container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +85,8 @@
 .upload-icon-container .tooltip, 
 .youtube-apps-icon-container .tooltip,
 .notifications-icon-container .tooltip,
-.current-user-picture-container .tooltip{
+.current-user-picture-container .tooltip,
+.youtube-home-container .tooltip{
   position: absolute;
   background-color: gray;
   color: white;
@@ -106,7 +108,8 @@
 .upload-icon-container:hover .tooltip,
 .youtube-apps-icon-container:hover .tooltip,
 .notifications-icon-container:hover .tooltip,
-.current-user-picture-container:hover .tooltip{
+.current-user-picture-container:hover .tooltip,
+.youtube-home-container:hover .tooltip{
   opacity: 1;
 }
 
