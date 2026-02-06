@@ -110,8 +110,11 @@
         const thumbnailAlt = video.thumbnailAlt || title;
         const channelAlt = video.channelAlt || `Channel picture for ${video.author}`;
 
-        return `
-          <a href="${video.href}" target="_blank" rel="noopener noreferrer" class="video-link">
+        const linkHref = video.id ? `watch.html?id=${encodeURIComponent(video.id)}` : video.href;
+    const externalAttrs = video.id ? "" : " target=\"_blank\" rel=\"noopener noreferrer\"";
+
+    return `
+          <a href="${linkHref}"${externalAttrs} class="video-link">
             <div class="video-preview">
               <div class="thumbnail-row">
                 <img class="thumbnail" src="${video.thumbnail}" alt="${thumbnailAlt}" loading="lazy" />

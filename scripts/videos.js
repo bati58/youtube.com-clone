@@ -1,5 +1,6 @@
 window.videos = [
   {
+    id: "v001",
     href: "https://www.youtube.com/watch?v=WWXLD8vT2_4&list=RDWWXLD8vT2_4&start_radio=1",
     thumbnail: "thumbnails/thumbnail-9.webp",
     duration: "6:32",
@@ -10,6 +11,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v002",
     href: "https://www.youtube.com/watch?v=n2RNcPRtAiY&t=1s",
     thumbnail: "thumbnails/thumbnail-1.webp",
     duration: "14:20",
@@ -20,6 +22,7 @@ window.videos = [
     section: "subscriptions"
   },
   {
+    id: "v003",
     href: "https://www.youtube.com/watch?v=ETTE3yZ6b1g&list=RDETTE3yZ6b1g&start_radio=1",
     thumbnail: "thumbnails/thumbnail-12.webp",
     duration: "5:39",
@@ -30,6 +33,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v004",
     href: "https://www.youtube.com/watch?v=mP0RAo9SKZk",
     thumbnail: "thumbnails/thumbnail-2.webp",
     duration: "8:22",
@@ -40,6 +44,7 @@ window.videos = [
     section: "explore"
   },
   {
+    id: "v005",
     href: "https://www.youtube.com/watch?v=pQHIe1RuMfE&list=RDpQHIe1RuMfE&start_radio=1",
     thumbnail: "thumbnails/thumbnail-11.webp",
     duration: "3:35",
@@ -50,6 +55,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v006",
     href: "https://www.youtube.com/watch?v=FgjPQQeTh1w",
     thumbnail: "thumbnails/thumbnail-3.webp",
     duration: "9:13",
@@ -60,6 +66,7 @@ window.videos = [
     section: "explore"
   },
   {
+    id: "v007",
     href: "https://www.youtube.com/watch?v=P45WXjkj8BI&list=RDP45WXjkj8BI&start_radio=1",
     thumbnail: "thumbnails/thumbnail-10.webp",
     duration: "5:20",
@@ -70,6 +77,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v008",
     href: "https://www.youtube.com/watch?v=86CQq3pKSUw&t=1s",
     thumbnail: "thumbnails/thumbnail-5.webp",
     duration: "11:17",
@@ -80,6 +88,7 @@ window.videos = [
     section: "library"
   },
   {
+    id: "v009",
     href: "https://www.youtube.com/watch?v=3Ca_W_XzGAI&list=RD3Ca_W_XzGAI&start_radio=1",
     thumbnail: "thumbnails/thumbnail-15.webp",
     duration: "5:20",
@@ -90,6 +99,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v010",
     href: "https://www.youtube.com/watch?v=yXWw0_UfSFg&t=3s",
     thumbnail: "thumbnails/thumbnail-6.webp",
     duration: "19:59",
@@ -100,6 +110,7 @@ window.videos = [
     section: "subscriptions"
   },
   {
+    id: "v011",
     href: "https://www.youtube.com/watch?v=C7gGelPwwwE&list=RDC7gGelPwwwE&start_radio=1",
     thumbnail: "thumbnails/thumbnail-14.webp",
     duration: "6:14",
@@ -110,6 +121,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v012",
     href: "https://www.youtube.com/watch?v=qz0aGYrrlhU&t=109s",
     thumbnail: "thumbnails/thumbnail-7.webp",
     duration: "1:09:34",
@@ -120,6 +132,7 @@ window.videos = [
     section: "library"
   },
   {
+    id: "v013",
     href: "https://www.youtube.com/watch?v=osuXdtZKhnE&list=RDosuXdtZKhnE&start_radio=1",
     thumbnail: "thumbnails/thumbnail-13.webp",
     duration: "11:47",
@@ -130,6 +143,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v014",
     href: "https://www.youtube.com/watch?v=G3e-cpL7ofc&t=20756s",
     thumbnail: "thumbnails/thumbnail-8.webp",
     duration: "6:31:24",
@@ -140,6 +154,7 @@ window.videos = [
     section: "library"
   },
   {
+    id: "v015",
     href: "https://www.youtube.com/watch?v=Mn6sVhKBd9M&list=RDMn6sVhKBd9M&start_radio=1",
     thumbnail: "thumbnails/thumbnail-16.webp",
     duration: "7:56",
@@ -150,6 +165,7 @@ window.videos = [
     section: "music"
   },
   {
+    id: "v016",
     href: "https://www.youtube.com/watch?v=094y1Z2wpJg",
     thumbnail: "thumbnails/thumbnail-4.webp",
     duration: "22:09",
