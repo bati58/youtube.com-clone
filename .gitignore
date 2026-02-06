@@ -1,0 +1,48 @@
+# Node
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Optional npm cache
+.npm/
+
+# Build and test output
+dist/
+build/
+coverage/
+.lighthouseci/
+
+# VSCode
+.vscode/
+
+# IDEs
+/.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Misc
+.cache/
+*.tgz
+
+# MacOS files
+*.DS_Store
+
+# Editor directories and files
+*.swp
