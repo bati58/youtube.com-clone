@@ -77,6 +77,7 @@
   bottom: 8px;
   right: 5px;
 }
+
 .video-link {
   text-decoration: none;
   color: inherit;
@@ -91,7 +92,7 @@
 
 .video-link:hover .thumbnail {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 16px rgb(0 0 0 / 15%);
 }
 
 @media (prefers-reduced-motion: reduce) {

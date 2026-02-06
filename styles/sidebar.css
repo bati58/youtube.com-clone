@@ -45,9 +45,11 @@
 .sidebar-link div {
   font-size: 10px;
 }
+
 .sidebar-link .label {
   font-size: 10px;
 }
+
 .sidebar-link .tooltip {
   position: absolute;
   top: 100%; /* Position below the entire sidebar-link block */
@@ -71,7 +73,7 @@
 }
 
 body.sidebar-collapsed {
-  --sidebar-width: 0px;
+  --sidebar-width: 0;
 }
 
 body.sidebar-collapsed .sidebar {
@@ -80,7 +82,7 @@ body.sidebar-collapsed .sidebar {
 
 @media (max-width: 900px) {
   body {
-    --sidebar-width: 0px;
+    --sidebar-width: 0;
   }
 
   .sidebar {

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/watch.css" />
 
-    <script type="application/ld+json" id="ld-json">{}</script>
+    <script type="application/ld+json" id="ld-json">
+      {}
+    </script>
     <meta name="theme-color" content="#1a73e8" />
     <meta name="robots" content="index, follow" />
   </head>
@@ -51,7 +53,11 @@
             <h3>Comments</h3>
             <form id="comment-form">
               <label for="comment-input" class="visually-hidden">Add a comment</label>
-              <textarea id="comment-input" rows="2" placeholder="Add a public comment..."></textarea>
+              <textarea
+                id="comment-input"
+                rows="2"
+                placeholder="Add a public comment..."
+              ></textarea>
               <button type="submit">Comment</button>
             </form>
             <ul id="comments-list" class="comments-list" aria-live="polite"></ul>

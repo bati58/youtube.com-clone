@@ -1,3 +1,4 @@
+/* eslint-env node, jest */
 /** @jest-environment jsdom */
 const fs = require('fs');
 const path = require('path');
@@ -12,9 +13,6 @@ test('renders video grid with items', () => {
   const grid = document.getElementById('video-grid');
   expect(grid).not.toBeNull();
 
-  // render() should populate grid
-  // call render explicitly
-  const render = require('../scripts/render.js');
-  // The render script self-executes; just assert there are child nodes
+  // The render script self-executes during require; just assert there are child nodes
   expect(grid.innerHTML.length).toBeGreaterThan(0);
 });

@@ -5,16 +5,16 @@
 }
 
 :root {
-  --color-bg: rgb(248, 248, 248);
-  --color-surface: rgb(255, 255, 255);
-  --color-border: rgb(228, 228, 228);
-  --color-muted: rgb(96, 96, 96);
-  --color-text: rgb(15, 15, 15);
-  --color-accent: rgb(26, 115, 232);
-  --color-hover: rgb(235, 235, 235);
-  --color-tooltip-bg: rgb(96, 96, 96);
-  --color-tooltip-text: rgb(255, 255, 255);
-  --color-danger: rgb(200, 0, 0);
+  --color-bg: rgb(248 248 248);
+  --color-surface: rgb(255 255 255);
+  --color-border: rgb(228 228 228);
+  --color-muted: rgb(96 96 96);
+  --color-text: rgb(15 15 15);
+  --color-accent: rgb(26 115 232);
+  --color-hover: rgb(235 235 235);
+  --color-tooltip-bg: rgb(96 96 96);
+  --color-tooltip-text: rgb(255 255 255);
+  --color-danger: rgb(200 0 0);
   --header-height: 56px;
   --sidebar-width: 72px;
   --content-padding-x: 24px;
@@ -64,7 +64,7 @@ p {
 
 body {
   /* This style below will be inherited */
-  font-family: Roboto, Arial;
+  font-family: Roboto, Arial, sans-serif;
   margin: 0;
   padding-top: calc(var(--header-height) + var(--content-padding-y));
   padding-left: calc(var(--sidebar-width) + var(--content-padding-x));
@@ -115,7 +115,7 @@ body {
   padding: 10px 16px;
   border-radius: 999px;
   font-size: 14px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 20%);
   transition: transform 0.2s ease, opacity 0.2s ease;
   opacity: 0;
   z-index: 1000;

@@ -74,7 +74,7 @@
 #comment-form textarea {
   flex: 1;
   padding: 8px;
-  font-family: Roboto, Arial;
+  font-family: Roboto, Arial, sans-serif;
   border: 1px solid var(--color-border);
   border-radius: 6px;
 }
@@ -82,7 +82,7 @@
 .comments-list {
   list-style: none;
   padding: 0;
-  margin: 12px 0 0 0;
+  margin: 12px 0 0;
 }
 
 .comments-list li {

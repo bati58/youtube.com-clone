@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>YouTubeClone</title>
-    <meta name="description" content="A front-end YouTube clone built with HTML, CSS, and JavaScript — a YouTube-like demo with watch pages, comments, and search." />
+    <meta
+      name="description"
+      content="A front-end YouTube clone built with HTML, CSS, and JavaScript — a YouTube-like demo with watch pages, comments, and search."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,13 +63,7 @@
       <div class="middle-section">
         <form class="search-form" role="search" action="#" method="get">
           <label class="visually-hidden" for="search-input">Search</label>
-          <input
-            class="search-bar"
-            id="search-input"
-            type="search"
-            name="q"
-            placeholder="Search"
-          />
+          <input class="search-bar" id="search-input" type="search" name="q" placeholder="Search" />
           <button class="search-button" type="submit" aria-label="Search">
             <img class="search-icon" src="icons/search.svg" alt="Search" />
             <div class="tooltip">Search</div>
@@ -82,11 +79,15 @@
       <!--right section code-->
 
       <div class="right-section">
-        <button class="icon-button upload-icon-container" type="button" aria-label="Create">
+        <button class="icon-button upload-icon-container" type="button" id="create-button" aria-label="Create">
           <img class="upload-icon" src="icons/upload.svg" alt="" />
           <div class="tooltip">Create</div>
         </button>
-        <button class="icon-button youtube-apps-icon-container" type="button" aria-label="YouTube Apps">
+        <button
+          class="icon-button youtube-apps-icon-container"
+          type="button"
+          aria-label="YouTube Apps"
+        >
           <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="" />
           <div class="tooltip">YouTube Apps</div>
         </button>
@@ -102,12 +103,12 @@
           <div class="tooltip">Notifications</div>
           <div class="notifications-count">9</div>
         </button>
-        <button class="icon-button current-user-picture-container" type="button" aria-label="Your channel">
-          <img
-            class="current-user-picture"
-            src="channel-pictures/mychannel.png"
-            alt=""
-          />
+        <button
+          class="icon-button current-user-picture-container"
+          type="button"
+          aria-label="Your channel"
+        >
+          <img class="current-user-picture" src="channel-pictures/mychannel.png" alt="" />
           <div class="tooltip">Your Channel</div>
         </button>
       </div>
@@ -169,10 +170,21 @@
       </noscript>
     </main>
 
-    <div class="notifications-panel" id="notifications-panel" role="region" aria-label="Notifications" hidden>
+    <div
+      class="notifications-panel"
+      id="notifications-panel"
+      role="region"
+      aria-label="Notifications"
+      hidden
+    >
       <div class="notifications-header">
         <span>Notifications</span>
-        <button type="button" class="icon-button" id="notifications-close" aria-label="Close notifications">
+        <button
+          type="button"
+          class="icon-button"
+          id="notifications-close"
+          aria-label="Close notifications"
+        >
           Close
         </button>
       </div>
@@ -185,8 +197,59 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
+    <!-- Create / Upload modal -->
+    <div id="create-modal" class="create-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="create-title">
+      <div class="create-dialog" role="document">
+        <button type="button" class="modal-close" id="create-close" aria-label="Close dialog">✕</button>
+        <h2 id="create-title">Add a video</h2>
+        <form id="create-form" aria-labelledby="create-title">
+          <label for="create-title-input">Title</label>
+          <input id="create-title-input" name="title" required />
+
+          <label for="create-href-input">Video URL (YouTube link)</label>
+          <input id="create-href-input" name="href" placeholder="https://www.youtube.com/watch?v=..." required />
+
+          <label for="create-thumbnail-input">Thumbnail URL</label>
+          <input id="create-thumbnail-input" name="thumbnail" placeholder="thumbnails/thumbnail-1.webp" />
+
+          <label for="create-thumbnail-file">Or upload thumbnail</label>
+          <input id="create-thumbnail-file" name="thumbnailFile" type="file" accept="image/*" />
+          <div id="create-thumbnail-preview" aria-hidden="true" style="margin-top:8px"></div>
+
+          <label for="create-author-input">Author</label>
+          <input id="create-author-input" name="author" />
+
+          <label for="create-duration-input">Duration</label>
+          <input id="create-duration-input" name="duration" placeholder="4:20" />
+
+          <div class="modal-actions">
+            <button type="submit" id="create-submit">Add video</button>
+            <button type="button" id="create-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- GitHub sync button + modal -->
+    <button class="icon-button" id="sync-button" aria-label="Sync to GitHub" title="Sync videos to GitHub">🔁</button>
+
+    <div id="sync-modal" class="create-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="sync-title">
+      <div class="create-dialog" role="document">
+        <button type="button" class="modal-close" id="sync-close" aria-label="Close dialog">✕</button>
+        <h2 id="sync-title">Sync videos to GitHub</h2>
+        <form id="sync-form" aria-labelledby="sync-title">
+          <label for="sync-token">Personal Access Token</label>
+          <input id="sync-token" name="token" type="password" placeholder="ghp_xxx" />
+          <label for="sync-remember"><input id="sync-remember" type="checkbox" /> Remember token in localStorage</label>
+          <div class="modal-actions">
+            <button type="submit" id="sync-submit">Sync now</button>
+            <button type="button" id="sync-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="scripts/videos.js" defer></script>
     <script src="scripts/render.js" defer></script>
   </body>
 </html>
-

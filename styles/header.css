@@ -1,20 +1,15 @@
 .header {
   height: var(--header-height);
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-
   background-color: var(--color-surface);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .left-section {
@@ -60,7 +55,7 @@
   font-size: 16px;
   border: 1px solid var(--color-border);
   border-radius: 2px;
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 2px 3px rgb(0 0 0 / 5%);
   width: 0;
 }
 
@@ -71,7 +66,7 @@
 .search-button {
   height: 40px;
   width: 66px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(240 240 240);
   border-width: 1px;
   border-style: solid;
   border-color: var(--color-border);
@@ -81,7 +76,7 @@
 .search-button,
 .voice-search-button,
 .icon-button,
-.youtube-home-container{
+.youtube-home-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,14 +99,11 @@
 .search-button .tooltip,
 .voice-search-button .tooltip,
 .icon-button .tooltip,
-.youtube-home-container .tooltip{
+.youtube-home-container .tooltip {
   position: absolute;
   background-color: var(--color-tooltip-bg);
   color: var(--color-tooltip-text);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 4px 8px;
   border-radius: 2px;
   font-size: 12px;
   bottom: -30px;
@@ -124,7 +116,7 @@
 .search-button:hover .tooltip,
 .voice-search-button:hover .tooltip,
 .icon-button:hover .tooltip,
-.youtube-home-container:hover .tooltip{
+.youtube-home-container:hover .tooltip {
   opacity: 1;
 }
 
@@ -137,7 +129,7 @@
   width: 40px;
   border-radius: 20px;
   border: none;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(245 245 245);
 }
 
 .voice-search-icon {
@@ -178,7 +170,7 @@
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 15%);
   padding: 12px;
   z-index: 300;
 }
@@ -223,10 +215,7 @@
   background-color: var(--color-danger);
   color: var(--color-tooltip-text);
   font-size: 11px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding: 2px 5px;
   border-radius: 10px;
 }
 
@@ -274,4 +263,122 @@
     right: 16px;
     width: auto;
   }
+}
+
+/* Create modal styles */
+.create-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 1000;
+}
+
+.create-modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.create-dialog {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 18px;
+  width: 420px;
+  max-width: calc(100% - 32px);
+}
+
+.create-dialog h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* modal animation */
+.create-dialog {
+  transform-origin: center;
+  transform: translateY(-8px) scale(0.995);
+  opacity: 0;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.create-modal[aria-hidden="false"] .create-dialog {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* close button */
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close:focus {
+  outline: 2px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+/* thumbnail preview */
+#create-thumbnail-preview img {
+  width: 140px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+/* small sync button */
+#sync-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 8px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.create-dialog label {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.create-dialog input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.modal-actions button {
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+#create-submit {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+}
+
+#create-cancel {
+  background: transparent;
+  border: 1px solid var(--color-border);
 }
