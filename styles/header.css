@@ -71,6 +71,7 @@
   border-style: solid;
   border-color: var(--color-border);
   margin-left: -1px;
+  border-radius:5px;
 }
 
 .search-button,
